@@ -1,5 +1,5 @@
 <?php
-define("FILENAME", "./const/userDetails.txt");
+define("FILENAME", "./const/userDetails.json");
 date_default_timezone_set("Asia/Dhaka");
 
 function getAvatar($username){
