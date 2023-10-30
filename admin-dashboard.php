@@ -234,6 +234,7 @@ if(isset($_POST['deleteuser'])){
 
       
     <div class="container-fluid py-4">
+      <!-- Admin Table -->
       <div class="row">
         <div class="col-12">
           <div class="card mb-4">
@@ -246,7 +247,6 @@ if(isset($_POST['deleteuser'])){
                   <button class="btn badge badge-sm bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#createAdminModal">Create Admin</button>
                 </div>
               </div>
-              <!-- <h6>All Users</h6> -->
             </div>
             <div class="card-body px-0 pt-0 pb-2">
               <div class="table-responsive p-0">
@@ -314,6 +314,8 @@ if(isset($_POST['deleteuser'])){
           </div>
         </div>
       </div>
+
+      <!-- Users Table -->
       <div class="row">
         <div class="col-12">
           <div class="card mb-4">
@@ -403,9 +405,7 @@ if(isset($_POST['deleteuser'])){
           <div class="row align-items-center justify-content-lg-between">
             <div class="col-lg-6 mb-lg-0 mb-4">
               <div class="copyright text-center text-sm text-muted text-lg-start">
-                © <script>
-                  document.write(new Date().getFullYear())
-                </script>,
+                Copyright © <a href="https://github.com/alemam242">Alemam </a><?php echo date("Y");?>,
                 made with <i class="fa fa-heart"></i>
               </div>
             </div>
@@ -468,7 +468,7 @@ if(isset($_POST['deleteuser'])){
                         <div class="mb-3">
                             <label for="editRole" class="form-label">Role</label>
                             <select class="form-select" id="editRole" name="role" required>
-                                <option value="user">User</option>
+                                <!-- <option value="user">User</option> -->
                                 <option value="manager">Manager</option>
                                 <!-- <option value="admin">Admin</option> -->
                             </select>
